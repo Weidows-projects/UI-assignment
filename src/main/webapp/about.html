@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <title>UI课设-关于</title>
+    <link rel="shortcut icon" href="img/tudoulei.png" type="images/x-5b" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .iw_poi_title {
+        color: #cc5522;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+        padding-right: 13px;
+        white-space: nowrap;
+      }
+
+      .iw_poi_content {
+        font: 12px arial, sans-serif;
+        overflow: visible;
+        padding-top: 4px;
+        white-space: -moz-pre-wrap;
+        word-wrap: break-word;
+      }
+      .about li {
+        padding-left: 10px;
+      }
+      .about_form .hrs {
+        width: 5%;
+        height: 3px;
+        margin: 20px auto;
+        background: #3884c0;
+      }
+
+      .about_form {
+        padding-top: 25px;
+        background: url("img/background.jpg") no-repeat;
+        background-size: 100% 100%;
+      }
+      .about_form h2 {
+        margin: 0;
+        height: 20px;
+        line-height: 20px;
+      }
+      .about_form form {
+        padding-top: 20px;
+        width: 80%;
+        margin: auto;
+        background: #fff;
+      }
+      .about_form ul {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      .about_form ul li {
+        list-style: none;
+      }
+      .about_form span {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .about_form input {
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        line-height: 40px;
+        background: #eaeeef;
+        border: none;
+        box-sizing: border-box;
+      }
+      .about_form .about_form_submit {
+        display: block;
+        width: 120px;
+        height: 40px;
+        line-height: 40%;
+        background: #3984c0;
+        color: #fff;
+        margin: auto;
+      }
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+  </head>
+  <body>
+    <!--header头部-->
+    <header id="header">
+      <nav class="navbar" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="logo" href="index.html"
+              ><img class="logo" src="img/header.jpg" alt=""
+            /></a>
+          </div>
+
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">首页</a></li>
+              <li><a href="2.html">其他</a></li>
+              <li><a class="active" href="#">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="fbwh banner_img">
+      <img src="img/原神/about-banner.jpg" alt="" />
+    </div>
+
+    <div class="about_form">
+      <div class="container">
+        <form action="#" method="get">
+          <h2>注册用户</h2>
+          <div class="hrs"></div>
+          <ul>
+            <li class="row">
+              <div class="col-md-6 uname">
+                <span>用户名 : <b></b> </span>
+                <input type="text" name="username" />
+              </div>
+              <div class="col-md-6 pwd">
+                <span>密码 : <b></b> </span>
+                <input type="text" name="password" />
+              </div>
+            </li>
+            <li class="confirmPwd">
+              <span>确认密码 : <b></b> </span>
+              <input type="text" />
+            </li>
+            <br />
+            <li>
+              <p><input class="about_form_submit" type="submit" /></p>
+            </li>
+            <br />
+          </ul>
+        </form>
+
+        <hr />
+
+        <form>
+          <h2>表单</h2>
+          <div class="hrs"></div>
+          <ul>
+            <li>
+              <div class="col-md-6">
+                <span>姓名</span> <input placeholder="请输入姓名" required />
+              </div>
+              <div class="col-md-6">
+                <span>性别</span>
+                <label
+                  >男<input name="gender" type="radio" value="男" checked
+                /></label>
+                <label>女<input name="gender" type="radio" value="女" /></label>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-6">
+                <span>爱好</span>
+                <label
+                  >游泳<input type="checkbox" value="游泳" class="check"
+                /></label>
+                <label
+                  >健身<input type="checkbox" value="健身" class="check"
+                /></label>
+                <label
+                  >下棋<input type="checkbox" value="下棋" class="check"
+                /></label>
+                <label
+                  >跑步<input type="checkbox" value="跑步" class="check"
+                /></label>
+                <label
+                  >编程<input type="checkbox" value="编程" class="check"
+                /></label>
+
+                <button id="checkAll">全选</button>
+                <button id="unCheckAll">全不</button>
+                <button id="reverseCheck">反选</button>
+              </div>
+              <div class="col-md-6">
+                <span>住址</span>
+                <div id="root">
+                  <label>请选择省份</label>
+                  <select id="province">
+                    <option value="hebei" selected>河北</option>
+                    <option value="beijing">北京</option>
+                  </select>
+                  <label>请选择市</label>
+                  <select id="city"></select>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-6">
+                <span>熟悉的语言(可多选)</span>
+                <select multiple required>
+                  <option value="apple">Java</option>
+                  <option value="orange">C/C++</option>
+                  <option value="banana">Python</option>
+                  <option value="banana">JavaScript</option>
+                </select>
+              </div>
+            </li>
+            <li align="center">
+              <input
+                class="about_form_submit"
+                type="reset"
+                style="display: inline-block"
+              />
+              <input
+                class="about_form_submit"
+                type="submit"
+                style="display: inline-block"
+              />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer id="footer" id="footer">
+      <div class="footer-button">
+        <div class="container">
+          <p>Copyright: 计科1903 A-123456789910 | 联系方式: A-12345678910</p>
+        </div>
+      </div>
+
+      <!--友情链接-->
+      <div class="footer-top link">
+        <div class="container">
+          友情链接：
+          <a target="_blank" href="http://weidows.gitee.io">Weidowsの博客</a>
+          <a target="_blank" href="http://www.baidu.com/">百度</a>
+          <a target="_blank" href="https://www.sina.com.cn/">新浪</a>
+          <a target="_blank" href="http://www.hebau.edu.cn/">河北农业大学</a>
+          <a target="_blank" href="http://www.wyw.cn/">中厨网</a>
+          <a target="_blank" href="http://www.wyw.cn/">优信二手车</a>
+          <a target="_blank" href="http://www.wyw.cn/">落阳地产</a>
+          <a target="_blank" href="http://www.hegii.com/">汽车之家</a>
+          <a
+            target="_blank"
+            href="https://shop68294732.taobao.com/?spm=a230r.7195193.1997079397.204.cYt8e7"
+            >马克森天猫商城</a
+          >
+          <a target="_blank" href="resources/压缩包.zip" target="_blank"
+            >下载压缩包</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div class="izl-rmenu">
+      <a class="consult" target="_blank">
+        <div class="pwd" style="display: none">12345678910</div>
+      </a>
+      <a class="cart">
+        <div class="pic"></div>
+      </a>
+      <!--回到顶/底部-->
+      <a href="#header" class="btn_top"></a>
+      <a href="#footer" class="btn_end"></a>
+    </div>
+
+    <script src="js/about.js"></script>
+  </body>
+</html>
