@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <title>UI课设-关于</title>
+    <link rel="shortcut icon" href="img/tudoulei.png" type="images/x-5b" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .iw_poi_title {
+        color: #cc5522;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+        padding-right: 13px;
+        white-space: nowrap;
+      }
+
+      .iw_poi_content {
+        font: 12px arial, sans-serif;
+        overflow: visible;
+        padding-top: 4px;
+        white-space: -moz-pre-wrap;
+        word-wrap: break-word;
+      }
+      .about li {
+        padding-left: 10px;
+      }
+      .about_form .hrs {
+        width: 5%;
+        height: 3px;
+        margin: 20px auto;
+        background: #3884c0;
+      }
+
+      .about_form {
+        padding-top: 25px;
+        background-size: 100% 100%;
+      }
+      .about_form h2 {
+        margin: 0;
+        height: 20px;
+        line-height: 20px;
+      }
+      .about_form form {
+        padding-top: 20px;
+        width: 80%;
+        margin: auto;
+        background: #fff;
+      }
+      .about_form ul {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      .about_form ul li {
+        list-style: none;
+      }
+      .about_form span {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .about_form input {
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        line-height: 40px;
+        background: #eaeeef;
+        border: none;
+        box-sizing: border-box;
+      }
+      .about_form .about_form_submit {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        line-height: 40%;
+        background: #3984c0;
+        color: #fff;
+        margin: auto;
+      }
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+  </head>
+  <body>
+    <!--header头部-->
+    <header id="header">
+      <nav class="navbar" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="logo" href="index.html"
+              ><img class="logo" src="img/header.jpg" alt=""
+            /></a>
+          </div>
+
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="">邮箱: 123456789@qq.com</a></li>
+              <li><a href="index.html">首页</a></li>
+              <li><a href="2.html">第二页</a></li>
+              <li><a href="3.html">第三页</a></li>
+              <li><a href="map.html">地图</a></li>
+              <li><a class="active" href="#">关于</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="fbwh banner_img">
+      <img src="img/about-banner.jpg" alt="" />
+    </div>
+
+    <div class="about_form">
+      <div class="container">
+        <form action="" method="get">
+          <h2>注册用户</h2>
+          <div class="hrs"></div>
+          <ul>
+            <li class="row">
+              <span>邮箱 :<b></b> </span>
+              <input type="text" id="email" name="email" />
+            </li>
+            <li class="row">
+              <div class="col-md-6 uname">
+                <span>用户名 :<b></b> </span>
+                <input type="text" name="username" />
+              </div>
+              <div class="col-md-6 pwd">
+                <span>密码 :<b></b> </span>
+                <input type="text" name="password" />
+              </div>
+            </li>
+            <li class="confirmPwd">
+              <span>确认密码 :<b></b> </span>
+              <input type="text" />
+            </li>
+            <br />
+            <li>
+              <p>
+                <input class="about_form_submit" type="submit" />
+                <button class="about_form_submit" id="check">查询</button>
+                <button class="about_form_submit" id="clear">删除</button>
+              </p>
+              <div id="check-data"></div>
+            </li>
+            <br />
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/collected_data.js"></script>
+  </body>
+</html>
