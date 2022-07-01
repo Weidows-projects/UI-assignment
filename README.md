@@ -17,7 +17,7 @@
 
 使用到一些框架和库: Bootstrap,JQuery,APlayer
 
-![分割线](https://cdn.jsdelivr.net/gh/Weidows/Images/img/divider.png)
+![分割线](https://www.helloimg.com/images/2022/07/01/ZM0SoX.png)
 
 # 标准
 
